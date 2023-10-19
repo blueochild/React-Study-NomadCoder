@@ -1,15 +1,12 @@
-import Button from './Button'
-import styled from "./App.module.css"
+import AppClenup from "./useEffect/AppClenup";
 
 function App() {
 
   return (
     <div>
-      <h1 className={styled.title}>test</h1>
-      <Button text={"test"}/>
+      <AppClenup />
     </div>
   );
-
 }
 
 export default App;
