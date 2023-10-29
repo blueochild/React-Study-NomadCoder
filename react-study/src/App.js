@@ -1,12 +1,11 @@
-import AppClenup from "./useEffect/AppClenup";
+import CoinChecker from "./CoinChecker/ConinChecker";
 
 function App() {
-
-  return (
-    <div>
-      <AppClenup />
-    </div>
-  );
+  return(
+    <>
+      <CoinChecker />
+    </>
+  )
 }
 
 export default App;
