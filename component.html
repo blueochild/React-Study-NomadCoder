@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <div id="root"></div>
+    </body>
+
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        // props는 유일한 property이다.
+        function Btn({ text, changeValue }){
+        // function Btn(props){
+            console.log(text, "was rerendered")
+            return(
+                <button 
+                onClick={changeValue}
+                style={{
+                    backgroundColor: "tomato",
+                    color:"white",
+                    padding:"10px 20px",
+                    border: 0,
+                    borderRadius:10,
+                }}>
+                {text}
+                </button>
+            );
+        }
+
+        // 리랜더링이 필요하지 않는 컴포넌트를 위해 아래와 같이 사용함
+        const MemorizedBtn = React.memo(Btn)
+
+        const App = () => {
+
+            const [value, setValue] = React.useState("Save Changes")
+            const changeValue = () => setValue("Revert Changes");
+            return (
+                <div>
+                    <MemorizedBtn text={value} changeValue={changeValue} />
+                    <MemorizedBtn text="Continue" />
+                </div>
+            );
+        }
+
+        const root = document.getElementById("root");
+        ReactDOM.render(<App />, root);
+    </script>
+</html>
