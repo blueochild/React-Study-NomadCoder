@@ -1,9 +1,9 @@
-import MovieInfo from "./MovieInfo/MovieInfo";
+import Index from "./MovieInfo/index";
 
 function App() {
   return(
     <>
-      <MovieInfo />
+      <Index />
     </>
   )
 }
