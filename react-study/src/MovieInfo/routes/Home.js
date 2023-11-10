@@ -1,4 +1,4 @@
-import MovieInfo from '../components/MovieComponent'
+import MovieInfo from '../components/MovieInfo'
 
 function Home(){
     
