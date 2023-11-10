@@ -1,9 +1,9 @@
-import CoinChecker from "./CoinChecker/ConinChecker";
+import MovieInfo from "./MovieInfo/MovieInfo";
 
 function App() {
   return(
     <>
-      <CoinChecker />
+      <MovieInfo />
     </>
   )
 }
