@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/React-Study-NomadCoder/static/js/main.9c038474.js",
-    "index.html": "/React-Study-NomadCoder/index.html",
-    "main.9c038474.js.map": "/React-Study-NomadCoder/static/js/main.9c038474.js.map"
+    "main.js": "/React-Study-NomadCoder/react-study/static/js/main.9c038474.js",
+    "index.html": "/React-Study-NomadCoder/react-study/index.html",
+    "main.9c038474.js.map": "/React-Study-NomadCoder/react-study/static/js/main.9c038474.js.map"
   },
   "entrypoints": [
     "static/js/main.9c038474.js"
