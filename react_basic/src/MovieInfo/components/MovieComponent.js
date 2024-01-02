@@ -7,7 +7,7 @@ function Movie({id, coverImg, title, summary, genres}){
             <img src={coverImg} alt={title} />
             {/* react-router-dom 의 Link 사용시 페이지가 새로고침되지 않음 */}
             <h2><Link to={`/movie/${id}`}>{title}</Link></h2>
-            <p>{summary}</p>
+            <p>{summary.length > 235 ? `${summary.slice(0, 235)}...` : summary}</p>
             <ul>
                 {genres.map(g => 
                     <li key={g}>{g}</li>
